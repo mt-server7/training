@@ -123,27 +123,30 @@ class Task_4
 class Task_5
 {
     private:
-        int n; long int a = 0, b = 1;
+        int n;
         void Output()
         {
             std::cout<<"Введите количество элементов: ";
             std::cin>>n;
+           long int* arr = new long int [n];
+            arr[0] = 1;
+
             for(int i=0; i<n; i++)
             {
-               a = a + b;
-               b = a - b;
-               std::cout<<a<<" ";
+                arr[i+1] = arr[i] * (n-i) / (i+1);
+                std::cout<<arr[i+1]<<" ";
             }
+            delete [] arr;
             std::cout<<std::endl;
         }
     public:
-        Task_4(int n1)
+        Task_5(int n1)
         {
             Set_num(n1);
             Output();
         }
 
-        ~Task_4(){}
+        ~Task_5(){}
 
         void Set_num(int n1)
         {
