@@ -12,12 +12,12 @@ void menu()
     std::cout<<"3. Вывод чисел, которые при делении на 4 дают остаток 3"<<std::endl;
     std::cout<<"4. Вывод чисел Фибоначчи"<<std::endl;
     std::cout<<"5. Вывод биноминальных коэффициентов"<<std::endl;
-    std::cout<<"6. Перевод киллометров в милли"<<std::endl;
-    std::cout<<"7. Перевод киллометров и метров в милли и футы"<<std::endl;
+    std::cout<<"6. Перевод километров в милли"<<std::endl;
+    std::cout<<"7. Перевод километров и метров в милли и футы"<<std::endl;
     std::cout<<"8. Перевод саженей в метры"<<std::endl;
     std::cout<<"9. Перевод сажаней и аршинов в метры и сантиметры"<<std::endl;
     std::cout<<"10. Перевод скорости из км/ч в м/с"<<std::endl;
-    std::cout<<"11. Обратная 10 задача"<<std::endl;
+    std::cout<<"11. Перевод скорости из м/с в км/ч"<<std::endl;
     std::cout<<"12. Вычесление суммы натуральных чисел"<<std::endl;
     std::cout<<"13. Вычисление суммы нечетных натуральных чисел"<<std::endl;
     std::cout<<"14. Заполнение массива натуральными числами"<<std::endl;
@@ -50,18 +50,18 @@ void menu()
             case 5:
                 run5();
                 break;
-//            case 6:
-//                run6();
-//                break;
-//            case 7:
-//                run7();
-//                break;
-//            case 8:
-//                run8();
-//                break;
-//            case 9:
-//                run9();
-//                break;
+            case 6:
+                run6();
+                break;
+            case 7:
+                run7();
+                break;
+            case 8:
+                run8();
+                break;
+            case 9:
+                run9();
+                break;
 //            case 10:
 //                run10();
 //                break;
@@ -134,30 +134,30 @@ void run5()
     Task_5 run(a);
     run.Set_num(a);
 }
-//void run6()
-//{
-//    int a = 0;
-//    Task_6 run(a);
-//    run.Set_num(a);
-//}
-//void run7()
-//{
-//    int a = 0;
-//    Task_7 run(a);
-//    run.Set_num(a);
-//}
-//void run8()
-//{
-//    int a = 0;
-//    Task_8 run(a);
-//    run.Set_num(a);
-//}
-//void run9()
-//{
-//    int a = 0;
-//    Task_9 run(a);
-//    run.Set_num(a);
-//}
+void run6()
+{
+    int a = 0;
+    Task_6 run(a);
+    run.Set_num(a);
+}
+void run7()
+{
+    int a = 0;
+    Task_7 run(a, a);
+    run.Set_num(a, a);
+}
+void run8()
+{
+    int a = 0;
+    Task_8 run(a);
+    run.Set_num(a);
+}
+void run9()
+{
+    int a = 0;
+    Task_9 run(a, a);
+    run.Set_num(a, a);
+}
 //void run10()
 //{
 //    int a = 0;
